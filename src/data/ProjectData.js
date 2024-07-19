@@ -6,15 +6,7 @@ import Recipe from '../assets/Recipe.jpg';
 import Recycle from '../assets/Recycle.jpg';
 // --------------------------------------- Project List
 export const ProjectList = [
-  {
-    img: DemanagerImg,
-    title: "De-Manager",
-    description:
-      "Web Application that is reated a system for booking vehicle service appointments, with an admin dashboard for service officers.",
-    tech_stack: ["React", "Node.js", "Exprees.js", "TailwindCSS", "MongoDB"],
-    github_url: "",
-    demo_url: "https://youknowtheending.net/",
-  },
+  
   {
     img: "/renr-responsive.png",
     title: "Smart Governing Portal",
@@ -25,11 +17,20 @@ export const ProjectList = [
     demo_url: "https://renr-bcit.web.app/",
   },
   {
+    img: DemanagerImg,
+    title: "De-Manager",
+    description:
+      "Web Application that is reated a system for booking vehicle service appointments, with an admin dashboard for service officers.",
+    tech_stack: ["React", "Node.js", "Exprees.js", "TailwindCSS", "MongoDB"],
+    github_url: "",
+    demo_url: "https://youknowtheending.net/",
+  },
+  {
     img: Recycle,
     title: "RecyclingApp",
     description:
       "This app has been developed as highly user friendly and compatible to remove unnecessary materialsfrom our houses. When consumers enter the details into this app, sellers can buy unnecessary materials from homeowners.",
-    tech_stack: ["Flutter", "Firebase", "AWS"],
+    tech_stack: ["Flutter", "Firebase"],
     github_url: "",
     demo_url: "https://renr-bcit.web.app/",
   },
