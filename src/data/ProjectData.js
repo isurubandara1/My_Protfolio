@@ -1,4 +1,9 @@
 import DemanagerImg from '../assets/Demanager.png';
+import Buyshoes from '../assets/Buyshoes.png';
+import Fiitness from '../assets/Fiitness.png';
+import Maths from '../assets/Maths.jpg';
+import Recipe from '../assets/Recipe.jpg';
+import Recycle from '../assets/Recycle.jpg';
 // --------------------------------------- Project List
 export const ProjectList = [
   {
@@ -20,7 +25,7 @@ export const ProjectList = [
     demo_url: "https://renr-bcit.web.app/",
   },
   {
-    img: "/renr-responsive.png",
+    img: Recycle,
     title: "RecyclingApp",
     description:
       "This app has been developed as highly user friendly and compatible to remove unnecessary materialsfrom our houses. When consumers enter the details into this app, sellers can buy unnecessary materials from homeowners.",
@@ -29,7 +34,7 @@ export const ProjectList = [
     demo_url: "https://renr-bcit.web.app/",
   },
   {
-    img: "/mymind-responsive.png",
+    img: Buyshoes,
     title: "BuyShoes",
     description:
       "eveloped a comprehensive e-commerce mobile application for purchasing shoes online.",
@@ -38,7 +43,7 @@ export const ProjectList = [
     demo_url: "https://mymindweb.vercel.app/",
   },
   {
-    img: "/pokedex-responsive.png",
+    img: Recipe,
     title: "Recipe App",
     description:
       "A new Flutter project designed to elevate your culinary adventures. With over 500+ searchable recipes categorized by country, this app is your ultimate kitchen companion.",
@@ -47,7 +52,7 @@ export const ProjectList = [
     demo_url: "https://pokedex-salesp07.netlify.app/",
   },
   {
-    img: "/jobDetect.png",
+    img: Fiitness,
     title: "FitnessWeb",
     description:
       "his website was created to promote fitness provide information on the topic. It also helps users find and contact fitness gyms.",
@@ -56,7 +61,7 @@ export const ProjectList = [
     demo_url: "https://jobdetective.onrender.com/",
   },
   {
-    img: "/jobDetect.png",
+    img: Maths,
     title: "Math Tricks App",
     description:
       "eveloped an application for solving mathematical problems and generating answers.",
