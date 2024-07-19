@@ -1,19 +1,20 @@
+import DemanagerImg from '../assets/Demanager.png';
 // --------------------------------------- Project List
 export const ProjectList = [
   {
-    img: "/ykte-feature-graphic.png",
-    title: "YouKnowTheEnding",
+    img: DemanagerImg,
+    title: "De-Manager",
     description:
-      "A cross-platform mobile game (in closed testing) where players try to find the missing pieces of a story.",
+      "Web Application that is reated a system for booking vehicle service appointments, with an admin dashboard for service officers.",
     tech_stack: ["React Native", "Google Cloud", "NextJs", "TailwindCSS"],
     github_url: "",
     demo_url: "https://youknowtheending.net/",
   },
   {
     img: "/renr-responsive.png",
-    title: "RENR Safety App",
+    title: "Smart Governing Portal",
     description:
-      "A safety application for the Renewable Resources Dept. of BCIT",
+      "Explored digital national ID cards and driver'slicense cards. All government services can beaccessed directly through this website.",
     tech_stack: ["React", "Firebase"],
     github_url: "",
     demo_url: "https://renr-bcit.web.app/",
