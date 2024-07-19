@@ -136,10 +136,6 @@ export const stackList = [
     name: "MySQL",
   },
   {
-    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg",
-    name: "Bootstrap",
-  },
-  {
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg",
     name: "VS Code",
   },
