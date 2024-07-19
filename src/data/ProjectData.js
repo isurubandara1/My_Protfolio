@@ -20,6 +20,15 @@ export const ProjectList = [
     demo_url: "https://renr-bcit.web.app/",
   },
   {
+    img: "/renr-responsive.png",
+    title: "RecyclingApp",
+    description:
+      "This app has been developed as highly user friendly and compatible to remove unnecessary materialsfrom our houses. When consumers enter the details into this app, sellers can buy unnecessary materials from homeowners.",
+    tech_stack: ["Flutter", "Firebase", "AWS"],
+    github_url: "",
+    demo_url: "https://renr-bcit.web.app/",
+  },
+  {
     img: "/mymind-responsive.png",
     title: "BuyShoes",
     description:
