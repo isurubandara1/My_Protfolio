@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Dropdown from "../Dropdown/Dropdown";
 import Header from "../Header/Header";
+import mypro from '../../assets/mypro.png';
+
 import {
   HeroContainer,
   HeroWrapper,
@@ -68,9 +70,9 @@ function Hero() {
           </HeroLeft>
           <HeroRight>
             <ScrollAnimation animateIn="fadeIn">
-              <Image
-                src="/man-svgrepo-com.svg"
-                alt="man-svgrepo"
+            <Image
+                src={mypro} // Use the imported mypro image
+                alt="my profile"
               />
             </ScrollAnimation>
           </HeroRight>

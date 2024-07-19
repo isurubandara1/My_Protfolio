@@ -79,8 +79,8 @@ export const HeroRight = styled.div`
 `;
 
 export const Image = styled.img`
-  height: 300px;
-  width: auto;
+  height: 400px;
+  width: 400px;
 `;
 
 const ScrollAnimation = keyframes`

@@ -27,7 +27,7 @@ function ProjectCard() {
                 ))}
               </TechCardContainer>
               <BtnGroup>
-                {list.github_url.length > 0 && (
+                {/* {list.github_url.length > 0 && (
                   <a
                     className="btn SecondaryBtn btn-shadow"
                     href={list.github_url}
@@ -36,7 +36,7 @@ function ProjectCard() {
                   >
                     Github
                   </a>
-                )}
+                )} */}
                 {list.demo_url.length > 0 && (
                   <a
                     className="btn PrimaryBtn btn-shadow"
