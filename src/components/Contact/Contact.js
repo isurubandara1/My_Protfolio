@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { ContactWrapper, Email } from "./ContactElements";
 import { MdContentCopy } from "react-icons/md";
 import { IconButton, Tooltip } from "@mui/material";
-import Zoom from '@mui/material/Zoom';
+import Zoom from "@mui/material/Zoom";
 
 import ScrollAnimation from "react-animate-on-scroll";
 function Contact() {
@@ -22,7 +22,16 @@ function Contact() {
         <ScrollAnimation animateIn="fadeIn">
           <div className="BigCard">
             <Email>
-              <div style={{ display: 'flex', alignItems: 'center', columnGap: '20px', rowGap: '10px', flexWrap: 'wrap', justifyContent: 'center' }}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  columnGap: "20px",
+                  rowGap: "10px",
+                  flexWrap: "wrap",
+                  justifyContent: "center",
+                }}
+              >
                 <span>isurumbandara@gmail.com</span>
                 <Tooltip
                   PopperProps={{
@@ -37,12 +46,27 @@ function Contact() {
                   disableTouchListener
                   placement="bottom"
                 >
-                  <IconButton onClick={() => copyToClipboard("isurumbandara@gmail.com")}>
-                    <MdContentCopy size={25} style={{ cursor: 'pointer', color: "#151418" }} />
+                  <IconButton
+                    onClick={() => copyToClipboard("isurumbandara@gmail.com")}
+                  >
+                    <MdContentCopy
+                      size={25}
+                      style={{ cursor: "pointer", color: "#151418" }}
+                    />
                   </IconButton>
                 </Tooltip>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', columnGap: '20px', rowGap: '10px', flexWrap: 'wrap', justifyContent: 'center', marginTop: '10px' }}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  columnGap: "20px",
+                  rowGap: "10px",
+                  flexWrap: "wrap",
+                  justifyContent: "center",
+                  marginTop: "10px",
+                }}
+              >
                 <span>+94 704394554</span>
                 <Tooltip
                   PopperProps={{
@@ -58,18 +82,22 @@ function Contact() {
                   placement="bottom"
                 >
                   <IconButton onClick={() => copyToClipboard("+94 704394554")}>
-                    <MdContentCopy size={25} style={{ cursor: 'pointer', color: "#151418" }} />
+                    <MdContentCopy
+                      size={25}
+                      style={{ cursor: "pointer", color: "#151418" }}
+                    />
                   </IconButton>
                 </Tooltip>
               </div>
               <a
-                className="btn PrimaryBtn btn-shadow"
-                href="mailto:isurumbandara@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Send Email
-              </a>
+  className="btn PrimaryBtn btn-shadow"
+  href="mailto:isurumbandara@gmail.com?subject=Inquiry&body=Hello Isuru,"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Send Email
+</a>
+
             </Email>
           </div>
         </ScrollAnimation>
