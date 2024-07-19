@@ -6,7 +6,7 @@ export const ProjectList = [
     title: "De-Manager",
     description:
       "Web Application that is reated a system for booking vehicle service appointments, with an admin dashboard for service officers.",
-    tech_stack: ["React Native", "Google Cloud", "NextJs", "TailwindCSS"],
+    tech_stack: ["React", "Node.js", "Exprees.js", "TailwindCSS", "MongoDB"],
     github_url: "",
     demo_url: "https://youknowtheending.net/",
   },
@@ -15,34 +15,43 @@ export const ProjectList = [
     title: "Smart Governing Portal",
     description:
       "Explored digital national ID cards and driver'slicense cards. All government services can beaccessed directly through this website.",
-    tech_stack: ["React", "Firebase"],
+    tech_stack: ["Flutter", "Firebase", "AWS"],
     github_url: "",
     demo_url: "https://renr-bcit.web.app/",
   },
   {
     img: "/mymind-responsive.png",
-    title: "MyMind",
+    title: "BuyShoes",
     description:
-      "An app where users can purchase online therapy sessions and chat with their therapists.",
-    tech_stack: ["HTML", "CSS", "NodeJs", "MongoDB", "SocketIo"],
+      "eveloped a comprehensive e-commerce mobile application for purchasing shoes online.",
+    tech_stack: ["React Native", "JavaScript", "MySQL", "Spring Boot"],
     github_url: "https://github.com/salesp07/MyMind---Copy",
     demo_url: "https://mymindweb.vercel.app/",
   },
   {
     img: "/pokedex-responsive.png",
-    title: "Pokedex",
+    title: "Recipe App",
     description:
-      "A pokedex app that displays pokemon data, plays OSTs and makes pokemons dance.",
-    tech_stack: ["ReactJs", "NodeJs", "MongoDB"],
+      "A new Flutter project designed to elevate your culinary adventures. With over 500+ searchable recipes categorized by country, this app is your ultimate kitchen companion.",
+    tech_stack: ["Flutter", "API Fething"],
     github_url: "https://github.com/salesp07/Pokedex-ReactApp",
     demo_url: "https://pokedex-salesp07.netlify.app/",
   },
   {
     img: "/jobDetect.png",
-    title: "JobDetect",
+    title: "FitnessWeb",
     description:
-      "An app to detect if a job posting is a scam or not using its description.",
-    tech_stack: ["Python", "Flask", "NodeJs", "MongoDB"],
+      "his website was created to promote fitness provide information on the topic. It also helps users find and contact fitness gyms.",
+    tech_stack: ["React", "TypeScript", "CSS"],
+    github_url: "https://github.com/salesp07/JobDetectNode",
+    demo_url: "https://jobdetective.onrender.com/",
+  },
+  {
+    img: "/jobDetect.png",
+    title: "Math Tricks App",
+    description:
+      "eveloped an application for solving mathematical problems and generating answers.",
+    tech_stack: ["Flutter", "State management"],
     github_url: "https://github.com/salesp07/JobDetectNode",
     demo_url: "https://jobdetective.onrender.com/",
   },
