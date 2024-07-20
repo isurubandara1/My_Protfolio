@@ -1,4 +1,5 @@
 import DemanagerImg from '../assets/Demanager.jpg';
+import Smartgov from '../assets/Smartgov.png';
 import Buyshoes from '../assets/Buyshoes.png';
 import Fiitness from '../assets/Fiitness.png';
 import Maths from '../assets/Maths.jpg';
@@ -8,7 +9,7 @@ import Recycle from '../assets/Recycle.jpg';
 export const ProjectList = [
   
   {
-    img: "/renr-responsive.png",
+    img: Smartgov,
     title: "Smart Governing Portal",
     description:
       "Explored digital national ID cards and driver'slicense cards. All government services can beaccessed directly through this website.",
