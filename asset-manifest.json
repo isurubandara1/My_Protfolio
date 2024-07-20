@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/My_Protfolio/static/css/main.f4a5f0a3.css",
+    "main.js": "/My_Protfolio/static/js/main.a61fcabe.js",
+    "static/media/Buyshoes.png": "/My_Protfolio/static/media/Buyshoes.89ceeba2a5720257ee9a.png",
+    "static/media/Demanager.jpg": "/My_Protfolio/static/media/Demanager.36995f3433be9208ad79.jpg",
+    "static/media/mypro.png": "/My_Protfolio/static/media/mypro.cfcf55231e0d5bcc28f9.png",
+    "static/media/Fiitness.png": "/My_Protfolio/static/media/Fiitness.b327028c3ec086f09860.png",
+    "static/media/Recipe.jpg": "/My_Protfolio/static/media/Recipe.64c43632328534788d2e.jpg",
+    "static/media/Maths.jpg": "/My_Protfolio/static/media/Maths.95ecbaef5cb22e7f8218.jpg",
+    "static/media/logo.png": "/My_Protfolio/static/media/logo.75d5b056ef55a29d1bee.png",
+    "static/media/Recycle.jpg": "/My_Protfolio/static/media/Recycle.6069906b5b9138ed894c.jpg",
+    "index.html": "/My_Protfolio/index.html",
+    "static/media/blob-haikei.svg": "/My_Protfolio/static/media/blob-haikei.ed4231cd548cd312fe4f.svg",
+    "main.f4a5f0a3.css.map": "/My_Protfolio/static/css/main.f4a5f0a3.css.map",
+    "main.a61fcabe.js.map": "/My_Protfolio/static/js/main.a61fcabe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4a5f0a3.css",
+    "static/js/main.a61fcabe.js"
+  ]
+}
