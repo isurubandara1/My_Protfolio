@@ -30,20 +30,26 @@ function About() {
             <br />
             <br />
 
-           
-
             <ScrollAnimation animateIn="fadeInLeft">
-  I successfully built three mobile apps: a Personal Expense Tracker App, a To-Do List App, and a Recipe App, and contributed to the Smart Governing Portal. Additionally, I developed the RecyclingApp and a MoviesTicketBooking website using Flutter and Firebase, and an e-commerce app, BuyShoes, with React Native, MySQL, and Spring Boot. I consistently met project deadlines and received positive feedback for my problem-solving skills, thriving in dynamic environments and continuously embracing new challenges in software development.
-  <br/><br /><div className="contact-info">
-    <p>Email: isurumbandara@gmail.com</p>
-    <p>Phone: +94 704394554</p>
-  </div>
-  <div className="tagline2">
-    I have become confident using the following technologies:
-  </div>
- 
-</ScrollAnimation>
-
+              I successfully built three mobile apps: a Personal Expense Tracker
+              App, a To-Do List App, and a Recipe App, and contributed to the
+              Smart Governing Portal. Additionally, I developed the RecyclingApp
+              and a MoviesTicketBooking website using Flutter and Firebase, and
+              an e-commerce app, BuyShoes, with React Native, MySQL, and Spring
+              Boot. I consistently met project deadlines and received positive
+              feedback for my problem-solving skills, thriving in dynamic
+              environments and continuously embracing new challenges in software
+              development.
+              <br />
+              <br />
+              <div className="contact-info">
+                <p>Email: isurumbandara@gmail.com</p>
+                <p>Phone: +94 704394554</p>
+              </div>
+              <div className="tagline2">
+                I have become confident using the following technologies:
+              </div>
+            </ScrollAnimation>
 
             <Technologies>
               {stackList.map((stack, index) => (
