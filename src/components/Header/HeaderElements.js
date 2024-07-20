@@ -12,9 +12,10 @@ export const Nav = styled.nav`
 `;
 
 export const NavLink = styled(ScrollLink)`
-  color: rgb(119, 119, 121);
+  color: "blue";
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 800;
   align-items: center;
   height: 100%;
   cursor: pointer;

@@ -23,7 +23,7 @@ const Header = ({ toggle }) => {
             Contact
           </NavLink>
         </NavMenu>
-        <NavBtn>
+        {/* <NavBtn>
           <a
             className="btn PrimaryBtn"
             href="https://linkedin.com/in/pedro-sales-muniz"
@@ -32,7 +32,7 @@ const Header = ({ toggle }) => {
           >
             Resume
           </a>
-        </NavBtn>
+        </NavBtn> */}
         <Bars onClick={toggle} />
       </Nav>
     </div>

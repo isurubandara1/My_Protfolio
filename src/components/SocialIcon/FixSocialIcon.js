@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaStackOverflow } from "react-icons/fa";
 import styled from "@emotion/styled";
 import ScrollAnimation from "react-animate-on-scroll";
 
@@ -55,35 +55,35 @@ function FixSocialIcon() {
   return (
     <SocialContainer>
       <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
-        <ul>
-          <li className="item">
-            <a
-              href="https://www.linkedin.com/in/isuru-bandara-b51aab244/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaLinkedin />
-            </a>
-          </li>
-          <li className="item">
-            <a
-              href="https://github.com/isurubandara1"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub />
-            </a>
-          </li>
-          <li className="item">
-            <a
-              href="https://github.com/isurubandara1"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub />
-            </a>
-          </li>
-        </ul>
+      <ul>
+      <li className="item">
+        <a
+          href="https://www.linkedin.com/in/isuru-bandara-b51aab244/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedin />
+        </a>
+      </li>
+      <li className="item">
+        <a
+          href="https://github.com/isurubandara1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub />
+        </a>
+      </li>
+      <li className="item">
+        <a
+          href="https://stackoverflow.com/users/16578521/isuru-bandara"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaStackOverflow />
+        </a>
+      </li>
+    </ul>
       </ScrollAnimation>
     </SocialContainer>
   );
