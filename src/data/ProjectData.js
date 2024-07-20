@@ -1,4 +1,4 @@
-import DemanagerImg from '../assets/Demanager.png';
+import DemanagerImg from '../assets/Demanager.jpg';
 import Buyshoes from '../assets/Buyshoes.png';
 import Fiitness from '../assets/Fiitness.png';
 import Maths from '../assets/Maths.jpg';

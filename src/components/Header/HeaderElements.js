@@ -12,7 +12,7 @@ export const Nav = styled.nav`
 `;
 
 export const NavLink = styled(ScrollLink)`
-  color: "blue";
+  color: #22A7F0;
   display: flex;
   font-size: 1.5rem;
   font-weight: 800;
@@ -53,12 +53,12 @@ export const NavMenu = styled.div`
   }
 `;
 
-export const NavBtn = styled.div`
-  display: flex;
-  align-items: center;
-  margin-right: 24px;
+// export const NavBtn = styled.div`
+//   display: flex;
+//   align-items: center;
+//   margin-right: 24px;
 
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-`;
+//   @media screen and (max-width: 768px) {
+//     display: none;
+//   }
+// `;

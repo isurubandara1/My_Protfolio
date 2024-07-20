@@ -83,7 +83,7 @@ function Dropdown({ isOpen, toggle }) {
           Contact
         </NavLink>
       </NavMenu>
-      <NavBtn onClick={toggle}>
+      {/* <NavBtn onClick={toggle}>
         <a
           className="btn PrimaryBtn"
           href="https://linkedin.com/in/pedro-sales-muniz"
@@ -92,7 +92,7 @@ function Dropdown({ isOpen, toggle }) {
         >
           Resume
         </a>
-      </NavBtn>
+      </NavBtn> */}
     </SiderBar>
   );
 }
