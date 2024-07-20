@@ -58,7 +58,7 @@ function FixSocialIcon() {
         <ul>
           <li className="item">
             <a
-              href="https://www.linkedin.com/in/pedro-sales-muniz"
+              href="https://www.linkedin.com/in/isuru-bandara-b51aab244/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -67,7 +67,16 @@ function FixSocialIcon() {
           </li>
           <li className="item">
             <a
-              href="https://github.com/salesp07"
+              href="https://github.com/isurubandara1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub />
+            </a>
+          </li>
+          <li className="item">
+            <a
+              href="https://github.com/isurubandara1"
               target="_blank"
               rel="noopener noreferrer"
             >

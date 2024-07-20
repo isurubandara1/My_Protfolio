@@ -14,7 +14,7 @@ export const ProjectList = [
       "Explored digital national ID cards and driver'slicense cards. All government services can beaccessed directly through this website.",
     tech_stack: ["Flutter", "Firebase", "AWS"],
     github_url: "https://github.com/isurubandara1/Smart_Governing_Portal-UNIVERSITY-MINI-PROJECT",
-    demo_url: "https://github.com/isurubandara1/De-Manager",
+    demo_url: "https://github.com/isurubandara1/Smart_Governing_Portal-UNIVERSITY-MINI-PROJECT",
   },
   {
     img: DemanagerImg,
