@@ -46,7 +46,7 @@ export const HeroLeft = styled.div`
     font-size: 2.8rem;
     color: #f6f6f6;
     opacity: 0.98;
-    font-weight: 400;
+    font-weight: 800;
   }
 
   h5 {
