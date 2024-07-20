@@ -89,14 +89,14 @@ function Contact() {
                   </IconButton>
                 </Tooltip>
               </div>
-              <a
+              {/* <a
   className="btn PrimaryBtn btn-shadow"
   href="mailto:isurumbandara@gmail.com?subject=Inquiry&body=Hello Isuru,"
   target="_blank"
   rel="noopener noreferrer"
 >
   Send Email
-</a>
+</a> */}
 
             </Email>
           </div>
