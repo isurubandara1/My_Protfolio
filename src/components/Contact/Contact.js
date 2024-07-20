@@ -39,7 +39,6 @@ function Contact() {
                   }}
                   open={showTooltip}
                   onClose={() => setShowTooltip(false)}
-                  title="Copied!"
                   TransitionComponent={Zoom}
                   disableFocusListener
                   disableHoverListener
@@ -74,7 +73,6 @@ function Contact() {
                   }}
                   open={showTooltip}
                   onClose={() => setShowTooltip(false)}
-                  title="Copied!"
                   TransitionComponent={Zoom}
                   disableFocusListener
                   disableHoverListener
