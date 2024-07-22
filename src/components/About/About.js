@@ -21,7 +21,7 @@ function About() {
           </ScrollAnimation>
           <div className="AboutBio">
             <ScrollAnimation animateIn="fadeInLeft">
-              Hello! My name is <strong>Isru Bandara</strong> a passionate
+              Hello! My name is <strong>Isuru Bandara</strong> a passionate
               Mobile developer with experience. I specialize in creating
               cross-platform mobile apps, blending functionality with aesthetic
               appeal. Proficient in Mobile development and Web Development.
