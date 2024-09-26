@@ -6,11 +6,13 @@ import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer/Footer";
 import FixSocialIcon from "../components/SocialIcon/FixSocialIcon";
 import ScrollToTop from "../components/SocialIcon/ScrollToTop";
+import Education from "../components/Education/Education";
 function Home() {
   return (
     <>
       <Hero />
       <Projects />
+      <Education/>
       <About />
       <Contact />
       <FixSocialIcon />
