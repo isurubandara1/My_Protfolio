@@ -56,9 +56,8 @@ const styles = {
     title: {
         fontSize: '28px',
         marginBottom: '10px',
-        
         fontWeight: 'bold',
-        textAlign: 'start',
+        textAlign: 'center',
     },
     container: {
         width: '90%',
@@ -66,7 +65,7 @@ const styles = {
         margin: '0 auto',
     },
     educationSection: {
-        paddingLeft: '80px',
+        paddingLeft: '50px',
         paddingTop: '40px',
     },
     educationItem: {
@@ -86,7 +85,7 @@ const styles = {
         flexGrow: 1,
     },
     eduTitle: {
-        fontSize: '1.5rem',
+        fontSize: '1.3rem',
         marginBottom: '10px',
         fontWeight: 'bold',
     },

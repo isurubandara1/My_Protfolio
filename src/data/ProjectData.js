@@ -18,7 +18,7 @@ export const ProjectList = [
     demo_url: "https://github.com/isurubandara1/Smart_Governing_Portal-UNIVERSITY-MINI-PROJECT",
   },
   {
-    img: DemanagerImg,
+    img: Smartgov,
     title: "De-Manager",
     description:
       "Web Application that is reated a system for booking vehicle service appointments, with an admin dashboard for service officers.",
@@ -27,7 +27,7 @@ export const ProjectList = [
     demo_url: "https://github.com/isurubandara1/De-Manager",
   },
   {
-    img: Recycle,
+    img: Smartgov,
     title: "RecyclingApp",
     description:
       "This app has been developed as highly user friendly and compatible to remove unnecessary materialsfrom our houses. When consumers enter the details into this app, sellers can buy unnecessary materials from homeowners.",
@@ -36,7 +36,7 @@ export const ProjectList = [
     demo_url: "https://github.com/isurubandara1/Recycling_App",
   },
   {
-    img: Buyshoes,
+    img: Smartgov,
     title: "BuyShoes",
     description:
       "eveloped a comprehensive e-commerce mobile application for purchasing shoes online.",
@@ -45,7 +45,7 @@ export const ProjectList = [
     demo_url: "https://github.com/isurubandara1/BuyShoes",
   },
   {
-    img: Recipe,
+    img: Smartgov,
     title: "Recipe App",
     description:
       "A new Flutter project designed to elevate your culinary adventures. With over 500+ searchable recipes categorized by country, this app is your ultimate kitchen companion.",
@@ -54,7 +54,7 @@ export const ProjectList = [
     demo_url: "https://github.com/isurubandara1/CodSoft/tree/main/Task3/recipe_app",
   },
   {
-    img: Fiitness,
+    img: Smartgov,
     title: "FitnessWeb",
     description:
       "his website was created to promote fitness provide information on the topic. It also helps users find and contact fitness gyms.",
@@ -63,7 +63,7 @@ export const ProjectList = [
     demo_url: "https://github.com/isurubandara1/FitnessWeb",
   },
   {
-    img: Maths,
+    img: Smartgov,
     title: "Math Tricks App",
     description:
       "eveloped an application for solving mathematical problems and generating answers.",

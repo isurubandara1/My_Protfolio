@@ -7,6 +7,7 @@ import Footer from "../components/Footer/Footer";
 import FixSocialIcon from "../components/SocialIcon/FixSocialIcon";
 import ScrollToTop from "../components/SocialIcon/ScrollToTop";
 import Education from "../components/Education/Education";
+import Skills from "../components/Skills/Skills";
 function Home() {
   return (
     <>
@@ -14,6 +15,7 @@ function Home() {
       <Projects />
       <Education/>
       <About />
+      <Skills/>
       <Contact />
       <FixSocialIcon />
       <Footer />

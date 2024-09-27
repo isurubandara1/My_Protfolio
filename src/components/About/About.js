@@ -1,6 +1,6 @@
 import React from "react";
 import { stackList } from "../../data/ProjectData";
-import about from '../../assets/about.png';
+import about from "../../assets/about.png";
 import {
   Image,
   Technologies,
@@ -27,10 +27,9 @@ function About() {
               appeal. Proficient in Mobile development and Web Development.
               Let's collaborate and bring your app ideas to life! 📱✨
             </ScrollAnimation>
-
             <br />
+          
             <br />
-
             <ScrollAnimation animateIn="fadeInLeft">
               I successfully built three mobile apps: a Personal Expense Tracker
               App, a To-Do List App, and a Recipe App, and contributed to the
@@ -51,7 +50,6 @@ function About() {
                 I have become confident using the following technologies:
               </div>
             </ScrollAnimation>
-
             <Technologies>
               {stackList.map((stack, index) => (
                 <ScrollAnimation animateIn="fadeInLeft" key={index}>
