@@ -1,49 +1,47 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
-import mypro from '../../assets/mypro.png';
 
 function Education() {
     return (
         <div style={styles.page}>
-           
-                <div style={styles.container}>
-                    <h1 style={styles.title}>Educational Background 🎓</h1>
-                </div>
-            
+            <div style={styles.container}>
+                <h1 style={styles.title}>Educational Background 🎓</h1>
+            </div>
 
             <section style={styles.educationSection}>
                 <div style={styles.container}>
 
-
-                    <div style={styles.educationItem}>
-                        <img 
-                            src="https://upload.wikimedia.org/wikipedia/en/5/5a/Logo-SUSL.png"
-                            alt="Sabaragamuwa University" 
-                            style={styles.eduImage} 
-                        />
-                        <div style={styles.eduDetails}>
-                            <h3 style={styles.eduTitle}>BSc. (Hons) in Computing & Information Systems</h3>
-                            <p style={styles.eduDetailsSub}>Sabaragamuwa University of Sri Lanka</p>
-                            <p style={styles.eduDetailsSub}>2021 – 2025</p>
+                    <ScrollAnimation animateIn="fadeIn">
+                        <div style={styles.educationItem}>
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/en/5/5a/Logo-SUSL.png"
+                                alt="Sabaragamuwa University"
+                                style={styles.eduImage}
+                            />
+                            <div style={styles.eduDetails}>
+                                <h3 style={styles.eduTitle}>BSc. (Hons) in Computing & Information Systems</h3>
+                                <p style={styles.eduDetailsSub}>Sabaragamuwa University of Sri Lanka</p>
+                                <p style={styles.eduDetailsSub}>2021 – 2025</p>
+                            </div>
                         </div>
-                    </div>
+                    </ScrollAnimation>
 
-                    <div style={styles.educationItem}>
-                        <img 
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtDfVb669z1bbFyGrKaUfkWS_jnekQ-S46_A&s" 
-                            alt="Maliyadeva Model College" 
-                            style={styles.eduImage} 
-                        />
-                        <div style={styles.eduDetails}>
-                            <h3 style={styles.eduTitle}>G.C.E. Advanced Level (Physical Stream)</h3>
-                            <p style={styles.eduDetailsSub}>Maliyadeva Model College</p>
-                            <p style={styles.eduDetailsSub}>2015 – 2018</p>
+                    <ScrollAnimation animateIn="fadeIn" >
+                        <div style={styles.educationItem}>
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtDfVb669z1bbFyGrKaUfkWS_jnekQ-S46_A&s"
+                                alt="Maliyadeva Model College"
+                                style={styles.eduImage}
+                            />
+                            <div style={styles.eduDetails}>
+                                <h3 style={styles.eduTitle}>G.C.E. Advanced Level (Physical Stream)</h3>
+                                <p style={styles.eduDetailsSub}>Maliyadeva Model College</p>
+                                <p style={styles.eduDetailsSub}>2015 – 2018</p>
+                            </div>
                         </div>
-                    </div>
+                    </ScrollAnimation>
                 </div>
             </section>
-
-           
         </div>
     );
 }
@@ -52,14 +50,15 @@ function Education() {
 const styles = {
     page: {
         fontFamily: 'Arial, sans-serif',
-        //backgroundColor: '#f4f4f9',
         margin: 0,
-        padding: 10,
+        padding: 0,
     },
     title: {
         fontSize: '28px',
         marginBottom: '10px',
+        
         fontWeight: 'bold',
+        textAlign: 'start',
     },
     container: {
         width: '90%',
@@ -69,11 +68,6 @@ const styles = {
     educationSection: {
         paddingLeft: '80px',
         paddingTop: '40px',
-    },
-    sectionTitle: {
-        fontSize: '2rem',
-        textAlign: 'center',
-        marginBottom: '40px',
     },
     educationItem: {
         display: 'flex',
@@ -97,7 +91,9 @@ const styles = {
         fontWeight: 'bold',
     },
     eduDetailsSub: {
-        fontStyle: 'italic', 
+        fontStyle: 'italic',
+        color: 'rgb(18, 111, 250)',
+        fontWeight: 900,
     },
     '@media screen and (maxWidth: 768px)': {
         educationItem: {
@@ -110,7 +106,6 @@ const styles = {
         },
         eduTitle: {
             fontSize: '1.25rem',
-            
         },
     },
 };
