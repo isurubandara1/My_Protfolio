@@ -65,7 +65,7 @@ const styles = {
         margin: '0 auto',
     },
     educationSection: {
-        paddingLeft: '50px',
+        paddingLeft: '120px',
         paddingTop: '40px',
     },
     educationItem: {
@@ -106,6 +106,7 @@ const styles = {
         eduTitle: {
             fontSize: '1.25rem',
         },
+        
     },
 };
 

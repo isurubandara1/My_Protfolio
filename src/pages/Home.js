@@ -8,6 +8,7 @@ import FixSocialIcon from "../components/SocialIcon/FixSocialIcon";
 import ScrollToTop from "../components/SocialIcon/ScrollToTop";
 import Education from "../components/Education/Education";
 import Skills from "../components/Skills/Skills";
+import Experience from "../components/Experience/Experience";
 function Home() {
   return (
     <>
@@ -16,6 +17,7 @@ function Home() {
       <Education/>
       <About />
       <Skills/>
+      <Experience/> 
       <Contact />
       <FixSocialIcon />
       <Footer />

@@ -13,7 +13,7 @@ function ProjectCard() {
   return (
     <>
       {ProjectList.map((list, index) => (
-        <ScrollAnimation animateIn="fadeInLeft" key={index}>
+        <ScrollAnimation animateIn="fadeIn" key={index}>
           <Card>
             <CardLeft>
               <img src={list.img} alt={list.name} />

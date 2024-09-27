@@ -3,15 +3,16 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 function Skills() {
     const technicalSkills = [
-        "JavaScript",
-        "React",
+        "App Development",
+        "Web Development",
         "Flutter",
+        "React Native",
+        "React",
+        "Dart",
+        "Java",
+        "JavaScript", 
         "Node.js",
-        "Express.js",
-        "TypeScript",
-        "SQLite",
-        "Redux",
-        "TailWind CSS"
+        
     ];
 
     const softSkills = [ 
