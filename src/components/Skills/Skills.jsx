@@ -45,7 +45,7 @@ function Skills() {
                         ))}
                     </div>
                 </div>  </ScrollAnimation>
-                <div style={styles.skillsGroup}>
+                <ScrollAnimation animateIn="fadeIn"> <div style={styles.skillsGroup}>
                     <h2 style={styles.groupTitle}>Soft Skills</h2>
                     <div style={styles.skillsContainer}>
                         {softSkills.map((skill, index) => (
@@ -54,7 +54,7 @@ function Skills() {
                             </div>
                         ))}
                     </div>
-                </div>
+                </div> </ScrollAnimation>
             </div>
         </div>
     );
@@ -115,7 +115,7 @@ const styles = {
         cursor: "pointer",
     },
     skillName: {
-        fontSize: "1.2rem",
+        fontSize: "1.1rem",
         color: 'rgb(18, 111, 250)',
         fontWeight: 500,
     }
