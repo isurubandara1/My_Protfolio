@@ -11,7 +11,7 @@ function Experience() {
                     duration: "2024 - 2024 · Less than a year",
                     location: "West Bengal, India · Remote",
                     Description: ["During this virtual internship, I developed three Flutter apps: a Personal Expense Tracker, a To-Do List, and a Recipe App. This experience enhanced my skills in cross-platform mobile development, state management, UI/UX design, and API integration, while also improving my problem-solving abilities, time management, and version control using GitHub."],
-                    skills: ["Mobille Application Development", "Flutter", "API Integration", "UI/UX Design", "State Management", "Problem-Solving", "Time Management"],
+                    skills: ["Mobille Application Development, Flutter, API Integration, Problem-Solving, UI/UX Design, State Management, Time Management"],
                 }
             ],
         },
@@ -26,7 +26,7 @@ function Experience() {
                     Description: [
                         "I effectively handled issues and managed my time, completing tasks with accuracy and timeliness while collaborating closely with my team and supporting my peers."
                     ],
-                    skills: ["Time Management", "Problem-Solving", "Teamwork", "Communication", "Leadership"],
+                    skills: ["Time Management, Problem-Solving, Teamwork, Communication, Leadership"],
                 }
             ],
         },
@@ -42,11 +42,7 @@ function Experience() {
                         "As a school leaver, I was responsible for updating bank books, creating new account books, issuing chequebooks, and performing balance checks. I gained valuable experience handling essential banking tasks and providing customer service in a fast-paced environment."
                     ],
                     skills: [
-                        "Strong communication",
-                        "Interpersonal skills",
-                        "Attention to detail",
-                        "Problem-solving",
-                        "Time management "
+                        "Strong communication, Interpersonal skills, Attention to detail, Problem-solving, Time management",
                     ]
                 },
                 {
@@ -57,11 +53,7 @@ function Experience() {
                         "Played a key role in the introduction of the BOC B App for account holders. Spearheaded the implementation of e-passbooks and online banking functionalities, significantly enhancing customer convenience and efficiency.",
                     ],
                     skills: [
-                        "Technical proficiency",
-                        "Strong analytical skills",
-                        "Strong communication",
-                        "Interpersonal skills",
-                        "Adaptability"
+                        "Technical proficiency, Problem-solving, Communication, Time management, Leadership",
                     ]
                 }
             ],
@@ -91,7 +83,7 @@ function Experience() {
                                     ) : (
                                         <li>No Description listed.</li>
                                     )}
-                                </ul>
+                                </ul><br />
                                 <strong>Skills:</strong>
                                 <ul>
                                     {role.skills.length > 0 ? (
