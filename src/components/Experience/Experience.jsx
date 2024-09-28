@@ -4,31 +4,69 @@ function Experience() {
     const experiences = [
         {
             company: "CodSoft",
-            logo: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1200,h=630,fit=crop,f=jpeg/Aq20eV79zLfpXV6b/1685789339697-YrDL60zzRBfzM6Wr.jpg", // Replace with actual logo URL
-            role: "Mobile Application Developer Virtual Internship",
-            duration: "2024 - 2024 · Less than a year",
-            location: "West Bengal, India · Remote",
-            description:
-                "During this virtual internship, I developed three Flutter apps: a Personal Expense Tracker, a To-Do List, and a Recipe App. This experience enhanced my skills in cross-platform mobile development, state management, UI/UX design, and API integration, while also improving my problem-solving abilities, time management, and version control using GitHub."
+            logo: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1200,h=630,fit=crop,f=jpeg/Aq20eV79zLfpXV6b/1685789339697-YrDL60zzRBfzM6Wr.jpg",
+            roles: [
+                {
+                    title: "Mobile Application Developer Virtual Internship",
+                    duration: "2024 - 2024 · Less than a year",
+                    location: "West Bengal, India · Remote",
+                    Description: ["During this virtual internship, I developed three Flutter apps: a Personal Expense Tracker, a To-Do List, and a Recipe App. This experience enhanced my skills in cross-platform mobile development, state management, UI/UX design, and API integration, while also improving my problem-solving abilities, time management, and version control using GitHub."],
+                    skills: ["Mobille Application Development", "Flutter", "API Integration", "UI/UX Design", "State Management", "Problem-Solving", "Time Management"],
+                }
+            ],
         },
         {
             company: "OREL IT",
-            logo: "https://media.licdn.com/dms/image/v2/C4E0BAQGX3SyKS3EEyg/company-logo_200_200/company-logo_200_200/0/1630640418238/orel_it_logo?e=2147483647&v=beta&t=dBRB7A9TV_cG2zASPieJFuYKvFm-OJ4jAuR7Y2zrTaQ", // Replace with actual logo URL
-            role: "Quality Specialist",
-            duration: "Jan 2021 - May 2021 · 5 mos",
-            location: "On-site",
-            description:
-                "I effectively handled issues and managed my time, completing tasks with accuracy and timeliness while collaborating closely with my team and supporting my peers."
+            logo: "https://media.licdn.com/dms/image/v2/C4E0BAQGX3SyKS3EEyg/company-logo_200_200/company-logo_200_200/0/1630640418238/orel_it_logo?e=2147483647&v=beta&t=dBRB7A9TV_cG2zASPieJFuYKvFm-OJ4jAuR7Y2zrTaQ",
+            roles: [
+                {
+                    title: "Quality Specialist",
+                    duration: "Jan 2021 - May 2021 · 5 mos",
+                    location: "On-site",
+                    Description: [
+                        "I effectively handled issues and managed my time, completing tasks with accuracy and timeliness while collaborating closely with my team and supporting my peers."
+                    ],
+                    skills: ["Time Management", "Problem-Solving", "Teamwork", "Communication", "Leadership"],
+                }
+            ],
         },
         {
             company: "Bank of Ceylon",
-            logo: "https://www.asia-pages.com/attach/product__i0s_1__1700.jpg", // Replace with actual logo URL
-            role: "Bank Assistant",
-            duration: "2020 - 2021 · 1 yr",
-            location: "Kurunegala District, North Western Province, Sri Lanka · On-site",
-            description:
-                "I successfully managed transactions with precision, resolved account issues efficiently, and built strong customer relationships, contributing to the smooth operation of the branch and achieving high customer satisfaction."
-        }
+            logo: "https://www.asia-pages.com/attach/product__i0s_1__1700.jpg",
+            roles: [
+                {
+                    title: "Bank Assistant",
+                    duration: "2020 - 2021 · 1 yr",
+                    location: "Kurunegala District, North Western Province, Sri Lanka · On-site",
+                    Description: [
+                        "As a school leaver, I was responsible for updating bank books, creating new account books, issuing chequebooks, and performing balance checks. I gained valuable experience handling essential banking tasks and providing customer service in a fast-paced environment."
+                    ],
+                    skills: [
+                        "Strong communication",
+                        "Interpersonal skills",
+                        "Attention to detail",
+                        "Problem-solving",
+                        "Time management "
+                    ]
+                },
+                {
+                    title: "IT Support Assistant (Online Banking Applications)",
+                    duration: "2020 - 2021 · 1 yr",
+                    location: "Kurunegala District, North Western Province, Sri Lanka · On-site",
+                    Description: [
+                        "Played a key role in the introduction of the BOC B App for account holders. Spearheaded the implementation of e-passbooks and online banking functionalities, significantly enhancing customer convenience and efficiency.",
+                    ],
+                    skills: [
+                        "Technical proficiency",
+                        "Strong analytical skills",
+                        "Strong communication",
+                        "Interpersonal skills",
+                        "Adaptability"
+                    ]
+                }
+            ],
+        },
+       
     ];
 
     return (
@@ -38,11 +76,34 @@ function Experience() {
                 <div key={index} style={styles.experienceCard}>
                     <img src={experience.logo} alt={`${experience.company} logo`} style={styles.logo} />
                     <div style={styles.details}>
-                        <h2 style={styles.role}>{experience.role}</h2>
-                        <p style={styles.company}>{experience.company}</p>
-                        <p style={styles.duration}>{experience.duration}</p>
-                        <p style={styles.location}>{experience.location}</p>
-                        <p style={styles.description}>{experience.description}</p>
+                        {experience.roles.map((role, roleIndex) => (
+                            <div key={roleIndex} style={styles.roleContainer}>
+                                <h2 style={styles.role}>{role.title}</h2>
+                                <p style={styles.company}>{experience.company}</p>
+                                <p style={styles.duration}>{role.duration}</p>
+                                <p style={styles.location}>{role.location}</p>
+                                <strong>Description:</strong>
+                                <ul>
+                                    {role.Description.length > 0 ? (
+                                        role.Description.map((responsibility, rIndex) => (
+                                            <li key={rIndex}>{responsibility}</li>
+                                        ))
+                                    ) : (
+                                        <li>No Description listed.</li>
+                                    )}
+                                </ul>
+                                <strong>Skills:</strong>
+                                <ul>
+                                    {role.skills.length > 0 ? (
+                                        role.skills.map((skill, sIndex) => (
+                                            <li key={sIndex}>{skill}</li>
+                                        ))
+                                    ) : (
+                                        <li>No skills listed.</li>
+                                    )}
+                                </ul>
+                            </div>
+                        ))}
                     </div>
                 </div>
             ))}
@@ -70,7 +131,7 @@ const styles = {
     experienceCard: {
         display: "flex",
         flexDirection: "row",
-        alignItems: "center",
+        alignItems: "flex-start",
         backgroundColor: "#fff",
         borderRadius: "10px",
         boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
@@ -89,6 +150,10 @@ const styles = {
     details: {
         display: "flex",
         flexDirection: "column",
+        flex: 1,
+    },
+    roleContainer: {
+        marginBottom: "20px",
     },
     role: {
         fontSize: "1.5rem",
@@ -108,11 +173,6 @@ const styles = {
         color: "#888",
         marginBottom: "10px",
     },
-    description: {
-        fontSize: "1rem",
-        color: "#555",
-        lineHeight: "1.5",
-    }
 };
 
 export default Experience;
