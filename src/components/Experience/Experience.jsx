@@ -115,10 +115,13 @@ const styles = {
         fontFamily: "Arial, sans-serif",
     },
     title: {
-        fontSize: "2.5rem",
+        fontSize: "1.7rem",
         color: "#333",
-        marginBottom: "20px",
-        textAlign: "center",
+        marginBottom: "10px",
+        alignSelf: "flex-start", // Aligns the title to the left
+        fontWeight: 900,
+        marginLeft: "10px", // Default margin
+       
     },
     experienceCard: {
         display: "flex",
@@ -166,5 +169,6 @@ const styles = {
         marginBottom: "10px",
     },
 };
+
 
 export default Experience;

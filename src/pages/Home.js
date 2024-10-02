@@ -16,7 +16,7 @@ function Home() {
       <Projects />
       <Education/>
       <About />
-      <Skills/>
+      {/* <Skills/> */}
       <Experience/> 
       <Contact />
       <FixSocialIcon />

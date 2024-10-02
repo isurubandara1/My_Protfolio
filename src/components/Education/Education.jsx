@@ -1,22 +1,35 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 
 function Education() {
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+    useEffect(() => {
+        // Add a resize event listener to update isMobile when the screen is resized
+        const handleResize = () => setIsMobile(window.innerWidth <= 768);
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+
     return (
         <div style={styles.page}>
             <div style={styles.container}>
-                <h1 style={styles.title}>Educational Background 🎓</h1>
+                <h1 style={{ ...styles.title, marginLeft: isMobile ? "0px" : "100px" }}>
+                    Educational Background 🎓
+                </h1>
             </div>
 
-            <section style={styles.educationSection}>
+            <section style={{ ...styles.educationSection, paddingLeft: isMobile ? '0px' : '120px' }}>
                 <div style={styles.container}>
-
                     <ScrollAnimation animateIn="fadeIn">
-                        <div style={styles.educationItem}>
+                        <div style={{ ...styles.educationItem, flexDirection: isMobile ? 'column' : 'row', textAlign: isMobile ? 'center' : 'left' }}>
                             <img
                                 src="https://upload.wikimedia.org/wikipedia/en/5/5a/Logo-SUSL.png"
                                 alt="Sabaragamuwa University"
-                                style={styles.eduImage}
+                                style={{ ...styles.eduImage, marginRight: isMobile ? '0' : '30px', marginBottom: isMobile ? '20px' : '0' }}
                             />
                             <div style={styles.eduDetails}>
                                 <h3 style={styles.eduTitle}>BSc. (Hons) in Computing & Information Systems</h3>
@@ -26,12 +39,12 @@ function Education() {
                         </div>
                     </ScrollAnimation>
 
-                    <ScrollAnimation animateIn="fadeIn" >
-                        <div style={styles.educationItem}>
+                    <ScrollAnimation animateIn="fadeIn">
+                        <div style={{ ...styles.educationItem, flexDirection: isMobile ? 'column' : 'row', textAlign: isMobile ? 'center' : 'left' }}>
                             <img
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtDfVb669z1bbFyGrKaUfkWS_jnekQ-S46_A&s"
                                 alt="Maliyadeva Model College"
-                                style={styles.eduImage}
+                                style={{ ...styles.eduImage, marginRight: isMobile ? '0' : '30px', marginBottom: isMobile ? '20px' : '0' }}
                             />
                             <div style={styles.eduDetails}>
                                 <h3 style={styles.eduTitle}>G.C.E. Advanced Level (Physical Stream)</h3>
@@ -54,10 +67,10 @@ const styles = {
         padding: 0,
     },
     title: {
-        fontSize: '28px',
-        marginBottom: '10px',
-        fontWeight: 'bold',
-        textAlign: 'center',
+        fontSize: "1.7rem",
+        color: "#333",
+        marginBottom: "10px",
+        fontWeight: 900,
     },
     container: {
         width: '90%',
@@ -65,21 +78,18 @@ const styles = {
         margin: '0 auto',
     },
     educationSection: {
-        paddingLeft: '120px',
         paddingTop: '40px',
     },
     educationItem: {
         display: 'flex',
         alignItems: 'center',
         marginBottom: '40px',
-        flexDirection: 'row',
     },
     eduImage: {
         width: '120px',
         height: '120px',
         objectFit: 'cover',
         borderRadius: '10%',
-        marginRight: '30px',
     },
     eduDetails: {
         flexGrow: 1,
@@ -93,20 +103,6 @@ const styles = {
         fontStyle: 'italic',
         color: 'rgb(18, 111, 250)',
         fontWeight: 900,
-    },
-    '@media screen and (maxWidth: 768px)': {
-        educationItem: {
-            flexDirection: 'column',
-            textAlign: 'center',
-        },
-        eduImage: {
-            marginBottom: '20px',
-            marginRight: '0',
-        },
-        eduTitle: {
-            fontSize: '1.25rem',
-        },
-        
     },
 };
 
