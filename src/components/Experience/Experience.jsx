@@ -1,6 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 function Experience() {
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+    // Update the state on window resize
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     const experiences = [
         {
             company: "CodSoft",
@@ -11,7 +23,7 @@ function Experience() {
                     duration: "2024 - 2024 · Less than a year",
                     location: "West Bengal, India · Remote",
                     Description: ["During this virtual internship, I developed three Flutter apps: a Personal Expense Tracker, a To-Do List, and a Recipe App. This experience enhanced my skills in cross-platform mobile development, state management, UI/UX design, and API integration, while also improving my problem-solving abilities, time management, and version control using GitHub."],
-                    skills: ["Mobille Application Development, Flutter, API Integration, Problem-Solving, UI/UX Design, State Management, Time Management"],
+                    skills: ["Mobile Application Development, Flutter, API Integration, Problem-Solving, UI/UX Design, State Management, Time Management"],
                 }
             ],
         },
@@ -58,12 +70,16 @@ function Experience() {
                 }
             ],
         },
-       
     ];
 
     return (
         <div style={styles.container}>
-            <h1 style={styles.title}>My Experience</h1>
+            <h1 style={{
+                ...styles.title,
+                marginLeft: isMobile ? "10px" : "150px" // Adjust margin based on screen size
+            }}>
+                My Experience
+            </h1>
             {experiences.map((experience, index) => (
                 <div key={index} style={styles.experienceCard}>
                     <img src={experience.logo} alt={`${experience.company} logo`} style={styles.logo} />
@@ -120,8 +136,6 @@ const styles = {
         marginBottom: "10px",
         alignSelf: "flex-start", // Aligns the title to the left
         fontWeight: 900,
-        marginLeft: "10px", // Default margin
-       
     },
     experienceCard: {
         display: "flex",
@@ -157,18 +171,17 @@ const styles = {
     },
     company: {
         fontSize: "1.2rem",
-        color: "#666",
+        color:"#666"
     },
-    duration: {
-        fontSize: "1rem",
-        color: "#888",
+    duration:{
+      fontSize:"1rem", 
+      color:"#888"
     },
-    location: {
-        fontSize: "1rem",
-        color: "#888",
-        marginBottom: "10px",
-    },
+    location:{
+      fontSize:"1rem", 
+      color:"#888", 
+      marginBottom:"10px"
+    }
 };
-
 
 export default Experience;
